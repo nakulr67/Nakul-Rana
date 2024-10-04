@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.poppins-thin {
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+.social-icons .social-icon svg {
+    transition: transform 0.3s ease, fill 0.3s ease;
+    color: #f8f9fa; /* Light color for dark background */
+}
+
+.social-icons .social-icon:hover svg {
+    transform: scale(1.2);
+    color: #ffd700; /* Gold color on hover */
+}
+
+
+/* ==================hero section======================= */
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease !important;
+}
+
+/* Show class will make the element visible */
+.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease !important;
+}
+.nav-link {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ffffff;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+}
+/* Hover effect (already present) */
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: #ffcc00;
+}
+
+/* Active link effect (to mimic the hover effect on scroll) */
+.nav-link.active::after {
+   width: 100%;
+    left: 0;
+    background: #ffcc00;
+}
+
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .nav-link {
+        color: #ffffff;
+    }
+
+    .nav-link.active {
+        color: #ffcc00;
+    }
+}
+
+/* ===============moving-text==================== */
+.typewriter h1 {
+    overflow: hidden !important;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: blink-caret .75s step-end infinite;
+    max-width: fit-content;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+/* ==============box-shadow-of-about=============== */
+.text-shadow {
+    position: relative;
+    background: transparent;
+
+}
+
+.text-shadow::before {
+    content: "About";
+    position: absolute;
+    top: 52px;
+    left: 140px;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 100px;
+    /* font-weight: bolder; */
+    opacity: 0.3;
+}
+
+.text-shadow-second {
+    position: relative;
+    background: transparent;
+
+}
+
+.text-shadow-second::before {
+    content: "Resume";
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 100px;
+    /* font-weight: bolder; */
+    opacity: 0.2;
+}
+
+.text-shadow-third {
+    position: relative;
+    background: transparent;
+
+}
+
+.text-shadow-third::before {
+    content: "TECHNICAL SKILLS";
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 80px;
+    /* font-weight: bolder; */
+    opacity: 0.2;
+}
+.text-shadow-fourth {
+    position: relative;
+    background: transparent;
+
+}
+
+.text-shadow-fourth::before {
+    content: "Services";
+    position: absolute;
+    top: 40px;
+    left: 320px;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 110px;
+    /* font-weight: bolder; */
+    opacity: 0.2;
+}
+
+.text-shadow-fiveth {
+    position: relative;
+    background: transparent;
+
+}
+
+.text-shadow-fiveth::before {
+    content: "Our Projects";
+    position: absolute;
+    top: 40px;
+    left: 220px;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 110px;
+    /* font-weight: bolder; */
+    opacity: 0.2;
+}
+.text-shadow-sixth {
+    position: relative;
+    background: transparent;
+
+}
+
+.text-shadow-sixth::before {
+    content: "Professional Certifications";
+    position: absolute;
+    top: 35px;
+    left: 120px;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 70px;
+    /* font-weight: bolder; */
+    opacity: 0.2;
+}
+.text-shadow-seventh {
+    position: relative;
+    background: transparent;
+
+}
+
+.text-shadow-seventh::before {
+    content: "Contact Me";
+    position: absolute;
+    top: 35px;
+    left: 350px;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 70px;
+    /* font-weight: bolder; */
+    opacity: 0.2;
+}
+
+/* =================box-div====================== */
+.box-div:hover {
+    transform: scale(1.05);
+    /* Zoom in */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* ===================text-zoom-effect================= */
+.zoom-text {
+    display: inline-block;
+    animation: zoomInOut 3s infinite;
+    color: green;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ===============TECHNICAL SKILLS=============== */
+.underline {
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    background: #998181;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+    width: 100%;
+    text-align: center;
+    background: #ffcc00;
+}
+
+#main-div-for-hover:hover {
+    background-color: #ffcc00 !important;
+    /* transition: color 0.3s ease !important;  */
+    transition: transform 0.6s ease, color 0.6s ease;
+    transform: scale(1.1);
+
+    /* animation: zoomInOut 3s i nfinite; */
+    #icon-color {
+        fill: white !important;
+    }
+
+    .underline {
+        background: black !important;
+    }
+
+    #text-color {
+        color: black
+    }
+    .btn-hover{
+        background: #000;
+        color: white;
+        animation: zoomInOut1 3s infinite;
+    }
+}
+/* =====================btn-zoom-in-out-text-effect================== */
+
+@keyframes zoomInOut1 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* =============progress-bar================ */
+.progress-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 30px;
+}
+
+.progress {
+    height: 10px;
+    background:rgb(45, 43, 43);
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 40px;
+    overflow: visible;
+    position: relative;
+}
+
+.progress .progress-bar {
+    background:#ecb82d;
+    border-radius: 0;
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+
+.progress .progress-bar:before {
+    content: "";
+    width: 100%;
+    /* border-top: 10px double #f95738; */
+    /* background: yellow; */
+    border-right: 25px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress .progress-value {
+    font-size: 18px;
+    font-weight: 700;
+    color:white;
+    /* position: absolute; */
+    top: -32px;
+    right: -5px;
+}
+
+.progress.yellow .progress-bar:before {
+    border-top-color: #ecb82d;
+}
+
+.progress.green .progress-bar:before {
+    border-top-color: #65c168;
+}
+
+.progress.blue .progress-bar:before {
+    border-top-color: #165692;
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+/* ========auto slider section=========== */
+#carouselExampleSlidesOnly:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+/* Zoom in effect on hover */
+#carouselExampleSlidesOnly:hover .carousel-item.active img {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* ===================footer================ */
+content {
+    height: 70vh; }
+  
+  .footer-20192 {
+    position: relative;
+    color: #fff;
+    padding: 7rem 0;
+    background-color: #141d2a; }
+    .footer-20192 .container {
+      position: relative; }
+    .footer-20192 h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      margin-top: 0;
+      line-height: 1.5; }
+    .footer-20192 .links li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+      display: block; }
+      .footer-20192 .links li a {
+        color: #666873; }
+        .footer-20192 .links li a:hover {
+          color: #fff; }
+    .footer-20192 .social li {
+      display: inline-block;
+      position: relative; }
+      .footer-20192 .social li a {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(45, 43, 43);
+        /* background-color:#ffcc00; */
+        color: #fff; }
+        .footer-20192 .social li a > span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+    .footer-20192 .footer-logo {
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: .1rem; }
+    .footer-20192 .copyright {
+      color: #666873; }
+    .footer-20192 .cta {
+      -webkit-box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
+      box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
+      padding: 20px;
+      background-color: #ffcc00;
+      top: -150px;
+      position: relative; }
+      .footer-20192 .cta h2, .footer-20192 .cta h3 {
+        line-height: 1.5; }
+      .footer-20192 .cta h3 {
+        font-size: 20px; }
+        
+  
+/* ==================responcive================== */
+@media (max-width: 600px) {
+    .typewriter h1{
+        font-size: 20px;
+    }
+    .text-small{
+        font-size: 15px !important;
+    }
+    .text-shadow-second::before {
+      display: none;
+    }
+    .text-shadow-fourth::before{
+       display: none;
+    }
+    .text-shadow::before {
+        display: none;
+    }
+    .text-shadow-third::before {
+       display: none;
+    }
+    .text-shadow-fourth::before {
+       display: none;
+    }
+    .text-shadow-fiveth::before {
+       display: none;
+    }
+    .text-shadow-sixth::before {
+       display: none;
+    }
+    .text-shadow-seventh::before {
+       display: none;
+    }
+    .margin-top{
+        margin-top: 80px !important;
+    }
+    /* .text-small{
+        font-size: small;
+    } */
+    /* .BG-IMG-FOR-MOBILE-VIEW{
+        background-image: (url(./img/IMG20230101101548-01~2.jpeg)) !important;
+        background-size: 100% 100%;
+    } */
+     .position{
+        position: absolute;
+        top: 30%;
+     }
+     .heading-text-small{
+        font-size: 23px !important;
+        font-weight: bold;
+     }
+    .btn-sm1{
+        padding: 10px 10px !important;
+        font-size: small !important;
+    }
+}
+
+
+
+
+
