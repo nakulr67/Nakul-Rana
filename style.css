@@ -414,13 +414,16 @@
 
 
 /* ===================footer================ */
+.quick-links{
+    text-align: left;
+}
 content {
     height: 70vh; }
   
   .footer-20192 {
     position: relative;
     color: #fff;
-    padding: 7rem 0;
+    /* padding: 7rem 0; */
     background-color: #141d2a; }
     .footer-20192 .container {
       position: relative; }
