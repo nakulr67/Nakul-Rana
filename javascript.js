@@ -1,5 +1,7 @@
+// ==============for Animation=================
+AOS.init();
 // ===================for underline===================
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-link");
 
@@ -7,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function changeActiveLink() {
         let index = sections.length;
 
-        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+        while (--index && window.scrollY + 50 < sections[index].offsetTop) { }
 
         navLinks.forEach((link) => link.classList.remove("active"));
         navLinks[index].classList.add("active");
@@ -19,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Change active link on click
     navLinks.forEach((link, idx) => {
-        link.addEventListener("click", function() {
+        link.addEventListener("click", function () {
             navLinks.forEach((link) => link.classList.remove("active"));
             this.classList.add("active");
 
@@ -42,14 +44,14 @@ function typeText() {
     if (currentChar < texts[currentText].length) {
         typewriterElement.textContent += texts[currentText].charAt(currentChar);
         currentChar++;
-        setTimeout(typeText, 100); 
+        setTimeout(typeText, 100);
     } else {
         setTimeout(() => {
             currentChar = 0;
-            currentText = (currentText + 1) % texts.length; 
+            currentText = (currentText + 1) % texts.length;
             typewriterElement.textContent = '';
             typeText();
-        }, 2000); 
+        }, 2000);
     }
 }
 
