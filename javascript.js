@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ====================for auti typ text============================
-const texts = ["I'm a Frontend Developer", "I'm Nakul Rana", "Excited to work with you"]; // Array of texts to display
+const texts = ["I'm a Frontend Developer","I'm also a Backend Developer", "I'm Nakul Rana", "Excited to work with you"]; // Array of texts to display
 let currentText = 0;
 let currentChar = 0;
 const typewriterElement = document.getElementById("typewriter-text");
